@@ -18,7 +18,7 @@ le travail consistait a:
 4. créer une page aléatoire : c'est dire lorsqu'on clique sur random a page , une page au hasard est affichée.
 
 5. créer la recherche des pages, donc un utilisateur peut rechercher une page spécifique si elle existe, son contenu est afficher ou si l'élément de recherche est similaire à une cette page est listée, et l'utilisateur peut y accéder sans problème et si elle n'existe une page d'erreur est affiche.
-    ![image de la page de modification](images/project_cs50_detail.png)
+    ![video de recherche et de presentation du project](images/project1_cs50web_video_search.mp4)
 
 
 ## TEST DU PROJECT  
