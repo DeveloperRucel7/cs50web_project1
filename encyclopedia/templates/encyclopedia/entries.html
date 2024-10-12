@@ -1,0 +1,33 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{title }}
+{% endblock %}
+
+{% block body %}
+    {% if content %}
+        <div  class="row">
+            <div class="col-12">
+                <p class="text-black mt-4 ml-4">{{content |safe }}</p>
+            </div>
+        </div>
+
+        <form action="{% url 'edit_page' %}" method="POST">
+            {% csrf_token %}
+            <input type="hidden" class="form-control" value="{{ title }}" name="edit_title">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-warning mb-3">Edit Page</button>
+            </div>
+        </form>
+    {% else %}
+        <div  class="row">
+            <div class="col-12">
+                <h1> We are so Sorry!</h1>
+            </div>
+            <div class="col-12">
+                <h3 class="text-danger mt-4 ml-4">{{ search_message}}</h3>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}

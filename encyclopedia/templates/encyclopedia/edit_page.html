@@ -1,0 +1,37 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit page {{ title }}
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-12">
+            <div class="col-12"><h1>Edit Page for {{ title}}</h1></div>
+            <div class="col-12">
+                <form action="{% url 'save_page' %}" method="post">
+                    {% csrf_token %}
+                    <div class="mb-3 col-6">
+                        <label for="exampleFormControlInput1" class="form-label">Page Title</label>
+                        <input type="text" class="form-control"  value="{{ title }}" name="edit_title">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="exampleFormControlTextarea1" class="form-label">Page Contain</label>
+                        <textarea class="form-control" rows="6"  name="edit_content" placeholder="I'm a fullstack web developer">
+                            {{ content }}
+                        </textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-warning mb-3">Edit Page</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+{% endblock %}

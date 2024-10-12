@@ -1,0 +1,35 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-12">
+            <div class="col-12"><h1>New Page </h1></div>
+            <div class="col-12">
+                <form action="{% url 'add_page' %}" method="post">
+                    {% csrf_token %}
+                    <div class="mb-3 col-6">
+                        <label for="exampleFormControlInput1" class="form-label">Page Title</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Programming" name="title">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="exampleFormControlTextarea1" class="form-label">Page Contain</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"  name="content" placeholder="I'm a fullstack web developer"></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Add New Page</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+{% endblock %}
