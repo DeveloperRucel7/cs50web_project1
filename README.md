@@ -27,16 +27,16 @@ le travail consistait a:
         telechargez ou bien cloner le projet et la racine du project , executez les commenade suivante.
     **
     *activer l'environement virtuel*
-        ```python
+        ```
             project1\Scripts\activate
         ```  
     *install django*
-    ```python
+    ```
         pip install django
     ```
 
     *une fois django installer acceder au project en executant la commande suivante*
-    ```python
+    ```
         python manage.py runserver
     ```
 
