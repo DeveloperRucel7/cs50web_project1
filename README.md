@@ -40,5 +40,6 @@ le travail consistait a:
         python manage.py runserver
     ```
 
-**envoyer moi des messages depuis mon portfolio meme si c'est juste pour me faire coucou**
-*[mon portfolio](https://ruceldev.web.app)*
+**envoyer moi des messages depuis mon portfolio meme si c'est juste pour me faire coucou**  
+
+*[visite mon portfolio](https://ruceldev.web.app)*
